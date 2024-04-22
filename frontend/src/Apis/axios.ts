@@ -1,9 +1,13 @@
 /// <reference types="vite/client" />
 
 import axios from "axios";
+const host =
+  window.location.hostname === "localhost"
+    ? import.meta.env.VITE_API_URL
+    : "api";
 
 const instance = axios.create({
-  baseURL: import.meta.env.VITE_API_URL,
+  baseURL: host,
   withCredentials: true,
 });
 
