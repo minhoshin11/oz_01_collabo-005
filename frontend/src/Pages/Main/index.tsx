@@ -7,7 +7,7 @@ function Main() {
   return (
     <div className="mainContainer">
       <div className="newPostContainer">
-        <div>실험중</div>
+        <div>실험중임</div>
         <NewPost />
         <CategoryBox />
         <MoveImages />
